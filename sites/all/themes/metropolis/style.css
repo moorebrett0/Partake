@@ -90,11 +90,13 @@ font-weight:normal;
 
 #header-wrapper {
 width:100%;
-background:#fff;
+background:#007d43;
+color: white;
 float:left;
-border-bottom: 1px solid #bfbfc6;
-height:75px;
+/*border-bottom: 1px solid #bfbfc6;*/
+height:115px;
 }
+
 
 #header {
 width:806px;
@@ -125,6 +127,7 @@ text-decoration:none;
 }
 
 .name-slogan-wrapper {
+margin-top: 29px;
 float:left;
 }
 
@@ -134,11 +137,20 @@ margin-right:10px;
 }
 
 .logo img {
-height:43px;
+height:79px;
+border-radius: 50%;
+padding: 2px;
+border: 2px solid black;
 }
 
 .site-name {
+margin-top: 15px;
 font-style:normal;
+}
+
+.site-name a {
+color: black;
+font-size: 3em;
 }
 
 .site-slogan {
@@ -147,7 +159,7 @@ font-size:14px;
 font-style:italic;
 }
 
-#authorize { 
+#authorize {
 float: right;
 bottom:0;
 font-size:12px;
@@ -158,14 +170,14 @@ margin: 40px 0 0;
 padding-left:0;
 }
 
-#authorize ul li { 
-display: inline; 
-list-style: none;  
+#authorize ul li {
+display: inline;
+list-style: none;
 background-image: none;
 }
 
 #authorize ul li.first {
-padding-right:10px; 
+padding-right:10px;
 }
 
 .feed-wrapper {
@@ -179,14 +191,16 @@ margin-left: 10px;
 
 #container-wrapper {
 width:100%;
-background:#f0f0f2 url(images/body-bg.gif) repeat-x top;
+background: -webkit-linear-gradient(#007d43, #ffc128);
+/*background:#f0f0f2 url(images/body-bg.gif) repeat-x top;*/
 clear:both;
 }
 
 #container-outer {
 width:818px;
 margin:0 auto;
-background:#f0f0f2 url(images/shadow-body.gif) repeat-y;
+background: rgba(0,0,0,0.2);
+padding-top: 7px;
 }
 
 #container-inner {
@@ -199,8 +213,8 @@ background:#fff url(images/separator-bottom.gif) no-repeat bottom center;
 #shadow-bottom {
 width:818px;
 margin:0 auto;
-height:9px;
-background:#f0f0f2 url(images/shadow-footer.gif) no-repeat;
+height:7px;
+background: rgba(0,0,0,0.2);
 }
 
 /* Menu regular
@@ -210,8 +224,11 @@ background:#f0f0f2 url(images/shadow-footer.gif) no-repeat;
 width:100%;
 float:left;
 position:relative;
-background:transparent url(images/shadow-dash.gif) no-repeat top left;
 z-index:4;
+}
+
+.menu li {
+    background: red;
 }
 
 .menu-outer {
@@ -264,6 +281,14 @@ font-size:12px;
 ul.links {
 padding:0;
 margin:0;
+}
+
+#menu .links li:hover {
+box-shadow: 0 0 5px #666 inset;
+}
+
+#menu .links li a {
+text-decoration: none;
 }
 
 /* Breadcrumb shadow
@@ -777,8 +802,10 @@ border:1px solid #bfbfc6;
 border-bottom: 1px solid #fff;
 }
 
-li a.active { 
+li a.active {
 color:#666666;
+text-decoration: none;
+
 }
 
 /* Table
@@ -894,6 +921,7 @@ padding:20px 20px 30px;
 clear:both;
 color:#666;
 font-size:12px;
+background: #ffc128;
 }
 
 #footer h2.block-title {

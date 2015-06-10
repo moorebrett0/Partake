@@ -94,7 +94,7 @@
 }
 
 #superfish ul a.active, #menu ul a.active {
-	text-decoration:underline;
+	font-weight: bold;
 }
 
 #superfish ul li, #menu ul li {
@@ -228,7 +228,7 @@
 /*** underline hover **/
 
 #menu ul li a:hover, #menu ul li .nolink:hover, #superfish ul li a:hover, #superfish ul li .nolink:hover , #superfish ul li .nolink.hover  {
-	text-decoration:underline;
+	text-decoration:none;
 }
 #superfish ul ul li a:hover, #superfish ul ul li .nolink:hover, #superfish ul ul li .nolink.hover  {
 	text-decoration:none;
@@ -287,10 +287,10 @@ li.sfHover > a > .sf-sub-indicator {
 }
 
 /*** fix z-index IE6/IE7 ***/
-#superfish ul li:hover, 
+#superfish ul li:hover,
 #superfish ul li.sfHover,
-#superfish ul a:focus, 
-#superfish ul a:hover, 
+#superfish ul a:focus,
+#superfish ul a:hover,
 #superfish ul a:active {
 z-index:10;
 }

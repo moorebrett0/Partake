@@ -1,8 +1,8 @@
-<?php 
+<?php
 ?>
 <div id="page-wrapper">
 		<div id="header-wrapper">
-			<div id="header"> 
+			<div id="header">
 					<div id="branding-wrapper">
 						<div class="branding">
 							<?php if ($logo): ?>
@@ -32,10 +32,10 @@
 				<?php endif; ?>
 				<div id="authorize">
 					<ul>
-						<?php global $user; 
+						<?php global $user;
 							if ($user->uid != 0) {
 								print '<li class="first">' .t('Logged in as '). '<a href="' .url('user/'.$user->uid). '">' .$user->name. '</a></li>';
-								print '<li class="last"><a href="' .url('user/logout'). '">' .t('Logout'). '</a></li>'; } 
+								print '<li class="last"><a href="' .url('user/logout'). '">' .t('Logout'). '</a></li>'; }
 							else {
 								print '<li class="first"><a href="' .url('user'). '">' .t('Login'). '</a></li>';
 								print '<li class="last"><a href="' .url('user/register'). '">' .t('Register'). '</a></li>'; }
@@ -44,13 +44,13 @@
 				</div> <!-- end authorize -->
 			</div> <!-- end header -->
 		</div> <!-- end header wrapper -->
-		
+
 		<div id="container-wrapper">
 			<div id="container-outer">
 				<div id="menu-wrapper">
 					<div class="menu-outer">
 						<div class="menu-inner">
-							<div class="menu-left"></div> 
+							<div class="menu-left"></div>
 							<?php if ($main_menu || $page['superfish_menu']): ?>
 										<div id="<?php print $main_menu ? 'menu' : 'superfish' ; ?>">
 											<?php if ($main_menu) {
@@ -64,13 +64,13 @@
 					</div>
 					<?php if (!$is_front) print $breadcrumb; ?>
 				</div> <!-- end menu wrapper -->
-				
+
 				<?php if (!$page['slideshow']): ?>
 					<?php if (!$is_front): ?>
 						<div class="breadcrumb-shadow"></div> <!-- end breadcrumb shadow -->
 					<?php endif; ?>
 				<?php endif; ?>
-				
+
 				<?php if ($page['slideshow']): ?>
 					<div id="slideshow-wrapper">
 						<div class="slideshow">
@@ -78,7 +78,7 @@
 						</div> <!-- end slideshow -->
 					</div> <!-- end slideshow wrapper -->
 				<?php endif; ?>
-				
+
 				<?php if (!$page['slideshow']): ?>
 					<?php if ($is_front): ?>
 						<div id="slideshow-wrapper">
@@ -91,7 +91,7 @@
 						</div> <!-- end slideshow wrapper -->
 					<?php endif; ?>
 				<?php endif; ?>
-			
+
 				<div id="container-inner">
 					<div id="content-wrapper" class="clearfix">
 						<div id="main-content">
@@ -127,7 +127,7 @@
 						<?php endif; ?>
 					</div> <!-- end content wrapper-->
 				</div> <!-- end container inner -->
-				
+
 				<?php if($page['bottom_1'] || $page['bottom_2'] || $page['bottom_3'] || $page['bottom_4']) : ?>
 					<div id="bottom-wrapper" class="in<?php print (bool) $page['bottom_1'] + (bool) $page['bottom_2'] + (bool) $page['bottom_3'] + (bool) $page['bottom_4']; ?> clearfix">
 						<?php if($page['bottom_1']) : ?>
@@ -157,7 +157,7 @@
 			</div> <!-- end container outer -->
 			<div id="shadow-bottom"></div>
 		</div> <!-- end container wrapper -->
-			
+
 		<div id="footer">
 			<?php print render ($page['footer']); ?>
 			<?php if($secondary_menu) : ?>
@@ -165,7 +165,6 @@
 					<?php print theme('links__system_secondary_menu', array('links' => $secondary_menu, 'attributes' => array('class' => array('links', 'clearfix')))); ?>
 				</div>
 			<?php endif; ?>
-			<?php print $notice; ?>
 		</div> <!-- end footer -->
-			
+
 </div> <!-- end page wrapper -->
