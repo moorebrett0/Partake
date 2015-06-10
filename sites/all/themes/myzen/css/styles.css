@@ -1,0 +1,85 @@
+/**
+ * @file
+ * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
+ *
+ * When you turn on CSS aggregation at admin/config/development/performance, all
+ * of these @include files will be combined into a single file.
+ */
+
+/* HTML element (SMACSS base) rules */
+@import "normalize.css";
+
+/* Layout rules */
+@import "layouts/responsive.css";
+
+/* Component (SMACSS module) rules */
+@import "components/misc.css";
+/* Optionally, add your own components here. */
+@import "print.css";
+p {
+ font-size: 14px;
+ line-height: 1.5;
+}
+img:hover {
+
+    border: groove;
+    border-radius: 50%;
+}
+
+.header {
+ background-color: #339900;
+ color: red;
+ padding: 20px 0;
+}
+
+.header__site-link span{
+    color: red;
+}
+
+.header__site-link:hover {
+    text-decoration: none;
+}
+
+.header__logo-image {
+    width: 75px;
+    padding: 5px;
+}
+
+.header__secondary-menu a{
+    background-color: #F5F10A;
+    border-radius: 5px;
+    color: red;
+    padding: 5px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+#navigation {
+    margin-top: 15px;
+}
+#navigation a {
+    background-color: #F5F10A;
+   border-radius: 5px;
+   color: green;
+   padding: 5px;
+   text-decoration: none;
+}
+.form-submit {
+   background-color: #F5F10A;
+   border-radius: 5px;
+   padding: 5px;
+   color: red;
+   border: none;
+}
+
+.container-inline input{
+   margin-bottom: 5px;
+}
+
+.region-mine {
+   text-align: center;
+}
+
+.region-mine a {
+   color:
+   text-decoration: none;
+}
