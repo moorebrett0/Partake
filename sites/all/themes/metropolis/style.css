@@ -140,7 +140,8 @@ margin-right:10px;
 height:79px;
 border-radius: 50%;
 padding: 2px;
-border: 2px solid black;
+border: 4px double #007d43;
+background-color: black;
 }
 
 .site-name {
@@ -192,6 +193,7 @@ margin-left: 10px;
 #container-wrapper {
 width:100%;
 background: -webkit-linear-gradient(#007d43, #ffc128);
+min-height: 1000px;
 /*background:#f0f0f2 url(images/body-bg.gif) repeat-x top;*/
 clear:both;
 }
@@ -957,4 +959,115 @@ padding-left:40px;
 
 .overlay #header-wrapper, .overlay #footer {
 display:none;
+}
+
+#drupaltimer-container {
+    float:right;
+    color: #d31f42;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*
+ * Image on featured page
+*/
+.field-item img {
+    padding: 2px;
+    float: left;
+    margin-right: 50px;
+}
+
+.field-name-field-old-price {
+    text-decoration: line-through;
+}
+/*
+ * SKU on featured page
+*/
+.commerce-product-sku-label{
+    display: inline-block;
+    padding: 8px 0px;
+}
+/*
+ * Content on featured page
+*/
+#ajax-target {
+    font-size: 25px;
+}
+#ajax-target .field {
+    margin: 10px 0;
+
+}
+/*
+ * H1 Title on featured page
+*/
+#main-content>.title {
+    display: none;
+}
+/*
+ * Product Title on featured page
+*/
+#ajax-target .title a{
+    font-size: 35px;
+    color: #666666;
+    text-decoration: none;
+    font-weight: bold;
+}
+#ajax-target .title a:hover{
+    text-decoration: underline;
+}
+/*
+ * Add to cart button on featured page
+*/
+#edit-submit, #edit-checkout{
+    border: none;
+    -moz-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    -webkit-box-shadow:inset 0px 1px 0px 0px #cf866c;
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d0451b), color-stop(1, #bc3315));
+    background:-moz-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-webkit-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-o-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:-ms-linear-gradient(top, #d0451b 5%, #bc3315 100%);
+    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d0451b', endColorstr='#bc3315',GradientType=0);
+    background-color:#d0451b;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:17px;
+    font-weight: bold;
+    padding:5px 24px;
+    margin: 5px 0px 0px 4px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #854629;
+    width: 150px;
+    height: 35px;
+}
+#edit-submit:active, #edit-checkout:active {
+    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bc3315), color-stop(1, #d0451b));
+    background:-moz-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-webkit-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-o-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:-ms-linear-gradient(top, #bc3315 5%, #d0451b 100%);
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#bc3315', endColorstr='#d0451b',GradientType=0);
+    background-color:#bc3315;
+}
+/*
+ * Comment Section on featured page
+*/
+.product-comment{
+    font-size: 16px;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.reviewer-name{
+    text-align: right;
+    font-style: italic;
 }

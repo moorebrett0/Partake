@@ -1,0 +1,5 @@
+name = Custom Submit
+description = Takes the add to cart and redirects the native settings
+package = Partake
+core = 7.x
+files[] = submit.module

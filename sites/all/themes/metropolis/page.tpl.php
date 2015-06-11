@@ -62,7 +62,6 @@
 							<div class="menu-right"></div>
 						</div>
 					</div>
-					<?php if (!$is_front) print $breadcrumb; ?>
 				</div> <!-- end menu wrapper -->
 
 				<?php if (!$page['slideshow']): ?>

@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/timer"]
+	path = sites/all/modules/timer
+	url = https://github.com/tfmertz/timer-module.git

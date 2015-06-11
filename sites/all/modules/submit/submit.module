@@ -1,0 +1,7 @@
+<?php
+    function submit_form_alter(&$form, &$form_state, $form_id) {
+        if (preg_match("/commerce_cart_add_to_cart_form/", $form_id)) {
+            $node = $form_id[strlen($form_id) - 1];
+            $form['#action'] = '/node/' . $node;
+        }
+    }
